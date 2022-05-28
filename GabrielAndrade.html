@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./assets/style.css"> DESCOMENTAR PARA UTILIZAR ARQUIVO CSS -->
+    <title>Projeto Guide</title>
+</head>
+
+<body>
+    <nav id="nav">
+        <img class="logo" src="./assets/img/Logo.png" alt="">
+        <button id="btn-mobile">MENU</button>
+        <ul id="menu" class="ulNav menu">
+            <li class="liNav"><a href="#">HOME</a></li>
+            <li class="liNav"><a href="#">COMPRAR</a></li>
+            <li class="liNav"><a href="#">ALUGAR </a></li>
+            <li class="liNav"><a href="#">IMÓVEIS NOVOS </a></li>
+            <li class="liNav"><a href="#">CONDOMÍNIOS </a></li>
+            <li class="liNav"><a href="#">FÓRUM</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="">
+            <div class="forms">
+                <h3 style="color: #005885;font-size: 1rem; font-weight: 500;">Fale com o anunciante agora</h3>
+                <div class="flex">
+                    <div class="inputStyle">
+                        <input id="text" type="text" placeholder="Seu nome">
+                        <br>
+                        <input id="tel" type="tel" placeholder="Telefone">
+                    </div>
+                    <br>
+                    <div class="inputStyle">
+                        <input type="email" id="email" placeholder="E-mail...">
+                    </div>
+                    <br>
+                    <div>
+                        <textarea class="flex" name="text-message" id="" style="width: 100%; height: 160px;"
+                            placeholder="Olá, tenho interesse neste imóvel: Residencial, 64 m², 2 quartos, Rua Borges Lagoa , Venda, R$ 830.000. Aguardo o contato. Obrigado."></textarea>
+                    </div>
+                </div>
+                <div style="margin-left: auto;">
+                    <button id="btn-submit" type="submit">Enviar</button>
+                </div>
+            </div>
+        </form>
+        <aside>
+            <div style="align-items: center;" class="ranking">
+                <h2 style="color: #005885;font-weight: 500; font-size: 1.2rem;">Ranking</h2>
+                <div class="listRanking">
+                    <ol class="olCorretor">
+                        <div class="separate">
+                            <li class="liCorretor">1º<img class="avatar" src="./assets/img/Avatar.jpg">
+                                <div
+                                    style="color: #005885; font-weight: 500; display: flex; flex-direction: column; align-items: flex-start;">
+                                    Corretor<img style="height: 20px;" src="./assets/img/especialista.svg"></div>
+
+                            </li>
+                            <span style="width: 40%;">1.000 pts</span>
+                        </div>
+                        <div class="separate">
+                            <li class="liCorretor">2º<img class="avatar" src="./assets/img/Avatar.jpg">
+                                <div
+                                    style="color: #005885; font-weight: 500; display: flex; flex-direction: column; align-items: flex-start;">
+                                    Corretor<img style="height: 20px;" src="./assets/img/especialista.svg"></div>
+
+                            </li>
+                            <span style="width: 40%;">1.000 pts</span>
+                        </div>
+                        <div class="separate">
+                            <li class="liCorretor">3º<img class="avatar" src="./assets/img/Avatar.jpg">
+                                <div
+                                    style="color: #005885; font-weight: 500; display: flex; flex-direction: column; align-items: flex-start;">
+                                    Corretor<img style="height: 20px;" src="./assets/img/especialista.svg"></div>
+
+                            </li>
+                            <span style="width: 40%;">1.000 pts</span>
+                        </div>
+                        <div class="separate">
+                            <li class="liCorretor">4º<img class="avatar" src="./assets/img/Avatar.jpg">
+                                <div
+                                    style="color: #005885; font-weight: 500; display: flex; flex-direction: column; align-items: flex-start;">
+                                    Corretor<img style="height: 20px;" src="./assets/img/especialista.svg"></div>
+
+                            </li>
+                            <span style="width: 40%;">1.000 pts</span>
+                        </div>
+                        <div class="separate">
+                            <li class="liCorretor">5º<img class="avatar" src="./assets/img/Avatar.jpg">
+                                <div
+                                    style="color: #005885; font-weight: 500; display: flex; flex-direction: column; align-items: flex-start;">
+                                    Corretor<img style="height: 20px;" src="./assets/img/especialista.svg"></div>
+
+                            </li>
+                            <span style="width: 40%;">1.000 pts</span>
+                        </div>
+                    </ol>
+                </div>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <div class="logoFooter">
+            <img src="./assets/img/Logo.png" alt="">
+        </div>
+    </footer>
+</body>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont,
+            "Segoe UI", "Roboto", "Oxygen",
+            "Ubuntu", "Cantarell", "Fira Sans",
+            "Droid Sans", "Helvetica Neue", sans-serif;
+        font-weight: 400;
+    }
+
+    body {
+        display: grid;
+        height: 100vh;
+    }
+
+    nav {
+        display: flex;
+        height: 42px;
+        background-color: #005885;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .menu,
+    .logo {
+        color: #ffffffc5;
+        font-size: .8rem;
+    }
+
+    #btn-mobile {
+        display: none;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inputStyle {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    .forms {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .ranking {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .separate {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+
+    .ulNav,
+    a {
+        color: #ffffffc5;
+        text-decoration: none;
+        gap: 2rem;
+        display: flex;
+        list-style: none;
+    }
+
+    .liNav {
+        cursor: pointer;
+    }
+
+    .liCorretor {
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        font-weight: 500;
+        cursor: pointer;
+        width: 100%;
+        gap: 1rem;
+        padding-left: 15px;
+    }
+
+    .olCorretor {
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: red;
+        gap: 2rem;
+    }
+
+    .listRanking {
+        width: 100%;
+    }
+
+    .avatar {
+        border: 1px solid #ABC7D3;
+        border-radius: 7px;
+        height: 45px;
+    }
+
+    img {
+        height: 38px;
+    }
+
+    input {
+        border: 1px solid #ABC7D3;
+        border-radius: 7px;
+        height: 35px;
+        padding: 0 10px;
+    }
+
+    textarea {
+        border: 1px solid #ABC7D3;
+        border-radius: 7px;
+        resize: none;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    #tel,
+    #text {
+        width: 45%;
+    }
+
+    #email {
+        width: 100%;
+    }
+
+    #btn-submit {
+        background: #FF8000;
+        border: none;
+        border-radius: 7px;
+        height: 40px;
+        width: 120px;
+        color: white;
+        text-align: center;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: 0.6s;
+    }
+
+    #btn-submit:hover {
+        background-color: #ff4800;
+    }
+
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin: 2rem;
+        height: auto;
+    }
+
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid #ABC7D3;
+        border-radius: 7px;
+        height: 464px;
+        width: 574px;
+        justify-content: center;
+    }
+
+    aside {
+        border: 1px solid #ABC7D3;
+        border-radius: 7px;
+        height: 464px;
+        width: 294px;
+    }
+
+    .logoFooter {
+        visibility: hidden;
+    }
+
+    footer {
+        height: 120px;
+        background: #005885;
+        margin-top: auto;
+    }
+
+    @media only screen and (max-device-width: 945px) {
+
+        main {
+            flex-wrap: wrap;
+            margin: 2rem 0;
+        }
+
+        form,
+        aside {
+            width: 520px;
+        }
+    }
+
+    @media only screen and (max-device-width: 655px) {
+
+        * {
+            transition: 0.3s;
+            font-size: 1rem;
+        }
+
+        #btn-mobile {
+            color: #ffffffc5;
+            padding: 6px 14px;
+            display: block;
+            background-color: #005885;
+            border: 1px solid #ABC7D3;
+            border-radius: 7px;
+            font-size: 0.9rem;
+            cursor: pointer;
+        }
+
+        #menu {
+            display: block;
+            position: absolute;
+            width: 100vw;
+            top: 42px;
+            right: 0px;
+            background-color: #005885;
+            transition: .6s;
+            z-index: 1000;
+            height: 0px;
+            visibility: hidden;
+            overflow-y: hidden;
+        }
+
+        #nav {
+            justify-content: space-around;
+        }
+
+        #nav.active #menu {
+            height: calc(100vh - 42px);
+            visibility: visible;
+            overflow-y: auto;
+        }
+
+        #menu a {
+            padding: 2rem 0;
+            margin: 0 1rem;
+            border-bottom: 1px solid #abc7d33b;
+            font-size: 1.1rem;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            margin: 2rem 0;
+        }
+
+        form,
+        aside {
+            width: 390px;
+        }
+
+        #tel,
+        #text,
+        #email {
+            width: 100%;
+        }
+
+        .logoFooter {
+            visibility: visible;
+        }
+
+        footer {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-right: 2rem;
+        }
+
+        .forms {
+            justify-content: space-between;
+        }
+
+        .menu,
+        .logo {
+            font-size: 1rem;
+        }
+
+        .inputStyle {
+            flex-wrap: wrap;
+        }
+    }
+
+    @media only screen and (max-device-width: 400px) {
+
+        * {
+            transition: 0.3s;
+        }
+
+        main {
+            margin: 2rem 0;
+        }
+
+        form,
+        aside {
+            max-width: 290px;
+        }
+    }
+</style>
+
+<script>
+    const btnMobile = document.getElementById("btn-mobile");
+
+    function toggleMenu() {
+        const nav = document.getElementById("nav");
+        nav.classList.toggle('active')
+
+    }
+
+    btnMobile.addEventListener('click', toggleMenu);
+</script>
+
+<!-- <script src="./assets/script.js"></script> DESCOMENTAR PARA USAR ARQUIVO JAVASCRIPT -->
+
+</html>
